@@ -1,0 +1,299 @@
+@import '~bootstrap/scss/bootstrap';
+
+$bigImageWidth: 24%;
+$marginImage: 0.38rem;
+
+.project-box {
+  padding: 0.75vw !important;
+  width: 40vw !important;
+}
+
+.portfolio-project {
+  border: 2px solid #4e568e;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 1rem;
+  // border-radius: 0.5rem;
+  float: left;
+  // margin-right: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    color: white;
+    background-color: #4e568e;
+    border-color: white;
+  }
+}
+
+.spotifeed {
+  border: 2px solid #666666;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 1rem;
+  // border-radius: 0.5rem;
+  float: right;
+  // margin-right: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    // color: white;
+    background-color: rgba(179,179,179,1);
+    border-color: black;
+  }
+}
+
+.tictactoe {
+  // background-color: #9ea39e;
+  border: 2px solid #beffbe;
+  width: 40vw;
+  margin: 0 auto;
+  // color: white;
+  padding: 1rem;
+  // border-radius: 0.5rem;
+  float: left;
+  // margin-left: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    color: black;
+    background-color: #beffbe;
+    border-color: #5bb35b;
+  }
+}
+
+.ouichat {
+  border: 2px solid rgb(177, 71, 71);
+  width: 40vw;
+  margin: 0 auto;
+  padding: 1rem;
+  // border-radius: 0.5rem;
+  float: right;
+  // margin-right: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    // color: white;
+    background-color: rgba(179,179,179,1);
+    border-color: rgb(10, 32, 87);
+  }
+}
+
+.ouichat-pic {
+  width: 37.2vw;
+}
+
+.big-images {
+  padding: 0 !important;
+  width: $bigImageWidth;
+  display: flex;
+  justify-content: center; 
+}
+
+.small-images {
+  display: flex;
+  justify-content: center; 
+}
+
+.mostRecentTracks {
+  width: 37.2vw;
+  // margin: $marginImage;
+  // border-radius: 1rem;
+  // float: right;
+}
+
+#contained-modal-title-vcenter {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+.modal-header .btn-close {
+  margin-left: 0 !important;
+}
+
+.modal-header {
+  padding-left: 2rem !important;
+}
+
+.playlist {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.playlist-aside {
+  margin: 0;
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
+.loginWithSpotify {
+  height: 22vw;
+  margin: $marginImage;
+}
+
+.spotifyLogin {
+  height: 22vw;
+  margin: $marginImage;
+}
+
+.modaltitle {
+  text-align: center;
+}
+
+.modal-lg, .modal-xl {
+  max-width: 75% !important;
+  border-radius: 2rem;
+}
+
+.modal-text-content {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 2rem !important;
+  padding: 1rem !important;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.modal-mid-text-content {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  margin: 2rem 0 !important;
+  padding: 1rem !important;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.modal-bottom-text-content {
+  border-top: 1px solid #dadada;
+  // border-bottom: 1px solid #dadada;
+  margin: 2rem 0 0 0 !important;
+  padding: 1rem !important;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.modal-text-content > p {
+  margin-bottom: 0;
+}
+
+.note {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.note-alt {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.theme {
+  border: 1px solid #b3b3b3;
+}
+
+.stacked {
+  margin-top: 1rem;
+}
+
+.links {
+  margin: 1rem 0 !important;
+}
+
+.deployedSite {
+  text-align: right;
+  border: 2px solid black;
+  height: 5vw;
+  padding: 1vw;
+  width: 20vw;
+  float: right;
+  border-radius: 1rem;
+  font-size: 1.75vw;
+  text-align: center;
+}
+
+.gitHubLink {
+  text-align: right;
+  border: 2px solid black;
+  height: 5vw;
+  padding: 1vw;
+  width: 20vw;
+  float: left;
+  border-radius: 1rem;
+  font-size: 1.75vw;
+  text-align: center;
+}
+
+span {
+  vertical-align: top;
+}
+
+.deployed {
+  width: 3vw;
+  float: right;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.github {
+  width: 3vw;
+  float: left;
+  margin-left: 0;
+  max-width: 5vw;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.proficiencies-image {
+  height: 34vw;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contact-image {
+  height: 16.5vw;
+  margin: 0rem 1rem 0.5rem 0;
+  border-radius: 2vh;
+}
+
+.project-image {
+  height: 16.5vw;
+  margin: 0.5rem 1rem 0.5rem 0;
+  border-radius: 2vh;
+}
+
+.side-images {
+  padding: 0 !important;
+  padding-right: 0.5rem;
+}
+
+.gitHubPortfolioLink {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid black;
+  height: 5vw;
+  padding: 1vw;
+  width: 16vw;
+  border-radius: 1rem;
+  font-size: 1.75vw;
+  text-align: center;
+}
+
+.gitHub-link {
+  vertical-align: middle;
+  width: 70%;
+}
+
+.github-div {
+  display: flex;
+  justify-content: center;
+}

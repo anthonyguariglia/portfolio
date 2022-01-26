@@ -1,0 +1,306 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500&display=swap');
+
+$height: 40vw;
+$name-font: 'Lato', serif;
+$light-weight: 300;
+$heavy-weight: 500;
+
+body {
+  font-family: $name-font !important;
+  font-weight: $light-weight;
+}
+
+.about-text {
+  // height: $height;
+  font-size: 2.75rem;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-me-col {
+  width: $height;
+  font-size: 1.5vw;
+  text-align: justify;
+  font-family: $name-font;
+  margin: 0 1rem !important;
+}
+
+.about-me-text {
+  // margin-right: 2rem;
+}
+
+.about-me-image {
+  // margin-left: 2rem;
+}
+
+.bullet {
+  justify-content: baseline;
+  padding-bottom: 12px;
+}
+
+.contact {
+  background: linear-gradient(180deg, rgba(170,171,172,1) 0%, #9c855783 25%, #ffc74d83 100%) !important;
+}
+
+.contact-title {
+  font-family: $name-font;
+  font-size: 50px;
+}
+
+.email-link {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.end-of-about {
+  // background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(253, 215, 134, 0.521) 100%);
+
+}
+
+.filler-div {
+  height: 10rem;
+}
+
+.form-email-address {
+  margin-top: 0.5rem;
+}
+
+.form-text-input {
+  color: white !important;
+  border-radius: 0 !important;
+  border: 1px solid #4e4e4e !important;
+  background-color: #b3b3b3 !important;
+
+  &:focus {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  &::placeholder {
+    color: #585858 !important;
+    // position: relative;
+    // top: -1.5rem; 
+  }
+}
+
+.form-message {
+  margin-top: 0.5rem;
+}
+
+.form-message-input {
+  color: white !important;
+  border-radius: 0 !important;
+  border: 1px solid #4e4e4e !important;
+  background-color: #b3b3b3 !important;
+  height: 10vh;
+
+  &:focus {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  &::placeholder {
+    color: #585858 !important;
+    // position: relative;
+    // top: -1.5rem; 
+  }
+}
+
+.form-name {
+  margin-top: 0.5rem;
+}
+
+.form-submit-button {
+  // border-radius: 3px;
+  color: #b3b3b3;
+  border: 1px solid #191919;
+  background-color: #191919;
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: #b3b3b3;
+    color: black;
+    .email-link {
+      color: black;
+    }
+  }
+}
+
+.half-filler-div {
+  height: 5rem;
+}
+
+.heading {
+  display: flex;
+  font-size: 2rem;
+  // color: white;
+  justify-content: center;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.javascript {
+  &:hover {
+
+  }
+}
+
+.large-heading {
+  font-size: 50px;
+  // margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.last-name {
+  display: flex;
+  font-size: 6rem;
+  color: white;
+  margin-left: -4rem;
+  justify-content: center;
+  font-family: $name-font;
+  font-weight: $light-weight;
+}
+
+.logos {
+  display: flex;
+  width: 7.5vw;
+  margin: 2rem;
+}
+
+.modal-dialog-centered {
+  // height: 90vh !important;
+  width: 72vh !important;
+  max-width: 670px !important;
+  // max-height: 90%;
+}
+
+.modal-content {
+}
+
+.name {
+  display: flex;
+  font-size: 6rem;
+  color: white;
+  justify-content: center;
+  margin-left: -12rem;
+  font-family: $name-font;
+  font-weight: $light-weight;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  margin: 1rem;
+  padding: 1rem;
+
+  &:hover {
+    color: #b3b3b3;
+  }
+}
+
+.one-and-half-filler-div {
+  height: 15rem;
+}
+
+.proficiencies {
+  font-size: 40px;
+  text-align: center;
+}
+
+.projects {
+  // background: linear-gradient(180deg, rgba(179, 219, 156, 0.733) 90%, rgba(179, 219, 156, 0.733) 100%);
+  background: linear-gradient(180deg, #D3E0EA 0%, rgba(170,171,172,1) 100%);
+
+}
+
+.project-button {
+  text-decoration: none;
+  color: black;
+  font-family: $name-font;
+  font-weight: $light-weight;
+}
+
+.resume-image {
+  max-height: 90vh;
+  max-width: 48vw;
+  // margin: auto auto;
+  padding: 1rem;
+}
+
+.resume-link {
+  padding: 0;
+  margin: 0;
+}
+
+.resume-modal {
+  // width: 50vw;
+}
+
+.software-proficiencies {
+  // background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(253, 216, 134, 0.521) 30%, rgba(255, 202, 88, 0.726) 60%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(180deg, white 0%, #D3E0EA 50%);
+}
+
+.subheading {
+  display: flex;
+  margin: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  margin-left: -0.3rem;
+  font-size: 24px;
+  font-family: $name-font;
+  font-weight: $heavy-weight;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-details {
+  margin-bottom: 0;
+}
+
+.title-logo-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.title-logos {
+  height: 40px;
+  margin: 1rem;
+}
+
+.title-page {
+  background: linear-gradient(180deg, rgba(73,71,129,1) 0%, rgba(109,157,204,1) 26%, rgba(255,255,255,1) 100%);
+}
+
+.wrapper {
+  border: none;
+  background: transparent;
+}
