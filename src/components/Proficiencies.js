@@ -8,7 +8,6 @@ import { Container, Row, Col, Tooltip, OverlayTrigger } from 'react-bootstrap'
 const Proficiencies = props => {
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
-      {console.log(props)}
       <>
         <span>{props}</span>
       </>
@@ -30,7 +29,7 @@ const Proficiencies = props => {
             delay={{ show: 25 }}
             overlay={renderTooltip('JavaScript')}
             name='JavaScript' >
-              <img src='https://icongr.am/devicon/javascript-original.svg?size=128' data-toggle="tooltip" data-placement="top" />
+              <img src='https://icongr.am/devicon/javascript-original.svg?size=128' />
           </OverlayTrigger>
         </Col>
         <Col className='logos'>

@@ -14,6 +14,9 @@ import Contact from '../components/Contact'
 import OuiChat from '../components/OuiChat'
 import { SpotiFeedModal, TicTacToeModal, PortfolioModal, OuiChatModal } from './modals'
 import { Prev } from 'react-bootstrap/esm/PageItem'
+import Scroll from 'react-scroll'
+const Element = Scroll.Element
+const scroller = Scroll.scroller
 
 const Layout = props => {
   const [spotiFeedModalShow, setSpotiFeedModalShow] = useState(false)
@@ -26,41 +29,45 @@ const Layout = props => {
       <Title />
       <About />
       <Proficiencies />
-      <Container fluid className='projects'>
-        <div className='filler-div large-heading'>
-          <p className=''>Projects</p>
-        </div>
-        <Row>
+      <Element name='projects' >
+        <Container fluid className='projects'>
+          <div className='filler-div large-heading'>
+            <p className=''>Projects</p>
+          </div>
+          <Row>
 
-          <Col className='project-box' >
-            <OuiChat showModal={setOuiChatModalShow} />
-          </Col>
-          <OuiChatModal show={ouiChatModalshow} onHide={() => setOuiChatModalShow(false)} />
+            <Col className='project-box' >
+              <OuiChat showModal={setOuiChatModalShow} />
+            </Col>
+            <OuiChatModal show={ouiChatModalshow} onHide={() => setOuiChatModalShow(false)} />
 
-          <Col className='project-box' >
-            <PortfolioProject showModal={setPortfolioModalShow} />
-          </Col>
-          <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
+            <Col className='project-box' >
+              <PortfolioProject showModal={setPortfolioModalShow} />
+            </Col>
+            <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
 
-        </Row>
-        <Row>
+          </Row>
+          <Row>
 
-          <Col className='project-box' >
-            <SpotiFeed showModal={setSpotiFeedModalShow} />
-          </Col>
-          <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
+            <Col className='project-box' >
+              <SpotiFeed showModal={setSpotiFeedModalShow} />
+            </Col>
+            <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
 
-          <Col className='project-box' >
-            <TicTacToe showModal={setTicTacToeModalShow} />
-          </Col>
-          <TicTacToeModal show={ticTacToeModalShow} onHide={() => setTicTacToeModalShow(false)} />
+            <Col className='project-box' >
+              <TicTacToe showModal={setTicTacToeModalShow} />
+            </Col>
+            <TicTacToeModal show={ticTacToeModalShow} onHide={() => setTicTacToeModalShow(false)} />
 
-        </Row>
-        <Row className='filler-div'></Row>
-      </Container>
-      <Container fluid className='contact'>
-        <Contact />
-      </Container>
+          </Row>
+          <Row className='filler-div'></Row>
+        </Container>
+      </Element>
+      <Element name='contact'>
+        <Container fluid className='contact'>
+          <Contact />
+        </Container>
+      </Element>
     </>
   )
 }

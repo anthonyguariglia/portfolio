@@ -4,9 +4,19 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Resume from '../shared/Resume'
+import Scroll from 'react-scroll'
+const scroller = Scroll.scroller
 
 const Title = props => {
   const [showResume, setShowResume] = useState(false)
+
+  const scrollTo = (element) => {
+    scroller.scrollTo(element, {
+      duration: 500,
+      delay: 0,
+      smooth: true // 'easeInOutQuart'
+    })
+  }
 
   return (
     <>
@@ -26,15 +36,11 @@ const Title = props => {
         <Row>
           <Col>
             <nav className='nav-bar'>
-              <li className='nav-items' onClick={() => {
-                window.scrollTo(0, 2650)
-              }}><a className='project-button' href='#'>PROJECTS</a></li>
+              <li className='nav-items' ><a className='project-button' href='#' onClick={() => { scrollTo('projects') }} >PROJECTS</a></li>
               <li className='bullet'>.</li>
               <li className='nav-items'><a className='project-button' href='#' onClick={() => setShowResume(true)}>RESUME</a><Resume show={showResume} onHide={() => setShowResume(false)}/></li>
               <li className='bullet'>.</li>
-              <li className='nav-items' onClick={() => {
-                window.scrollTo(0, 4000)
-              }}><a className='project-button' href='#'>CONTACT</a></li>
+              <li className='nav-items'><a className='project-button' href='#' onClick={() => { scrollTo('contact') }}>CONTACT</a></li>
             </nav>
           </Col>
         </Row>
