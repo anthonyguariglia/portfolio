@@ -292,7 +292,7 @@ img {
   }
 
   .project-text {
-    font-size: 8vw;
+    font-size: 2rem;
   }
 
   .resume-image {
@@ -305,7 +305,58 @@ img {
   .resume-link {
     width: 90vw !important;
   }
-}
+
+  .ouichat, .tictactoe, .spotifeed, .portfolio-project {
+    float: unset !important;
+    width: 80vw !important;
+    margin: 2vh auto !important;
+  }
+
+  .project-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-box {
+    width: 80vw !important;
+    margin: 0 auto !important;
+  }
+
+  .mostRecentTracks, .ouichat-pic {
+    width: 70vw !important;
+  }
+
+  .form-contact, .contact-title {
+    width: 80vw !important;
+    margin: 0 auto !important;
+  }
+
+  .modal-content {
+    width: 90vw !important;
+  }
+
+  .modal-dialog {
+    width: 90vw !important;
+    margin: 2rem !important;
+  }
+
+  .portfolio-title {
+    font-size: 6vw !important;
+  }
+
+  .gitHubPortfolioLink, .gitHubLink, .deployedSite {
+    width: 28vw !important;
+    height: 10vw !important;
+  }
+
+  span {
+    font-size: 3vw !important;
+  }
+
+  .github, .deployed {
+    width: 4vw !important;
+  }
+ }
 
 .nav-bar {
   list-style-type: none;

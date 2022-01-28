@@ -7,7 +7,7 @@ export const SpotiFeedModal = (props) => {
   return (
     <Modal
       {...props}
-      size='lg'
+      size='lg modal-md'
       aria-labelledby='contained-modal-title-vcenter'>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
@@ -171,7 +171,7 @@ export const PortfolioModal = props => {
       aria-labelledby="contained-modal-title-vcenter"
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title className='portfolio-title' id="contained-modal-title-vcenter">
           Personal Software Portfolio
         </Modal.Title>
       </Modal.Header>

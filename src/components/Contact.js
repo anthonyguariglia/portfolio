@@ -20,7 +20,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='col-4 mx-auto'>
+    <section className='col-md-4 col-sm-8 mx-auto'>
       <div className='filler-div' />
       <h3 className='contact-title'>Contact Me!</h3>
       <Form className='form-contact' onSubmit={handleSubmit}>

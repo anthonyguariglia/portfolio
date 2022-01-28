@@ -34,7 +34,7 @@ const Layout = props => {
           <div className='filler-div large-heading'>
             <p className='project-text'>Projects</p>
           </div>
-          <Row>
+          <Row className='project-row'>
 
             <Col className='project-box' >
               <OuiChat showModal={setOuiChatModalShow} />
@@ -47,7 +47,7 @@ const Layout = props => {
             <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
 
           </Row>
-          <Row>
+          <Row className='project-row'>
 
             <Col className='project-box' >
               <SpotiFeed showModal={setSpotiFeedModalShow} />
