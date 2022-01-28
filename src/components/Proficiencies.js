@@ -18,18 +18,18 @@ const Proficiencies = props => {
     <Container fluid className='software-proficiencies'>
       <Row className='half-filler-div'>
       </Row>
-      <Row className='filler-div'>
+      <Row className='filler-div about-col'>
         <Col><p className='proficiencies'>Software Proficiencies</p></Col>
       </Row>
       <Row>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
         <Col className='logos'>
           <OverlayTrigger
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('JavaScript')}
             name='JavaScript' >
-              <img src='https://icongr.am/devicon/javascript-original.svg?size=128' />
+              <img className='logo-pic' src='https://icongr.am/devicon/javascript-original.svg?size=128' />
           </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -37,7 +37,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('JQuery')} >
-          <img src='https://icongr.am/devicon/jquery-plain-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/jquery-plain-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -45,7 +45,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('CSS/SCSS')} >
-          <img src='https://icongr.am/devicon/css3-original-wordmark.svg?size=128&color=a64dff' />
+          <img className='logo-pic' src='https://icongr.am/devicon/css3-original-wordmark.svg?size=128&color=a64dff' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -53,19 +53,19 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('Bootstrap')} >
-          <img src='https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=a64dff' />
+          <img className='logo-pic' src='https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=a64dff' />
         </OverlayTrigger>
         </Col>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
       </Row>
       <Row>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
         <Col className='logos'>
         <OverlayTrigger
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('GitHub')} >
-          <img src='https://icongr.am/devicon/github-original-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/github-original-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -73,7 +73,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('Heroku')} >
-          <img src='https://icongr.am/devicon/heroku-original.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/heroku-original.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -81,7 +81,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('React')} >
-          <img src='https://icongr.am/devicon/react-original-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/react-original-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -89,19 +89,19 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('MongoDB')} >
-          <img src='https://icongr.am/devicon/mongodb-original-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/mongodb-original-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
       </Row>
       <Row>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
         <Col className='logos'>
         <OverlayTrigger
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('NodeJS')} >
-          <img src='https://icongr.am/devicon/nodejs-original-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/nodejs-original-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -109,7 +109,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('Express')} >
-          <img src='https://icongr.am/devicon/express-original-wordmark.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/express-original-wordmark.svg?size=128' />
         </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -117,7 +117,7 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('Python')} >
-          <img src='https://icongr.am/devicon/python-original.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/python-original.svg?size=128' />
           </OverlayTrigger>
         </Col>
         <Col className='logos'>
@@ -125,10 +125,10 @@ const Proficiencies = props => {
             placement="top"
             delay={{ show: 25 }}
             overlay={renderTooltip('C++')} >
-          <img src='https://icongr.am/devicon/cplusplus-original.svg?size=128' />
+          <img className='logo-pic' src='https://icongr.am/devicon/cplusplus-original.svg?size=128' />
         </OverlayTrigger>
         </Col>
-        <Col className='logos' />
+        <Col className='logos logos-alt' />
       </Row>
       <Row className='half-filler-div'>
         <Col>

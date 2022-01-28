@@ -32,7 +32,7 @@ const Layout = props => {
       <Element name='projects' >
         <Container fluid className='projects'>
           <div className='filler-div large-heading'>
-            <p className=''>Projects</p>
+            <p className='project-text'>Projects</p>
           </div>
           <Row>
 

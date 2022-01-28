@@ -205,6 +205,108 @@ img {
   font-weight: $light-weight;
 }
 
+@media (max-width: 768px) {
+  .name {
+    margin-left: -4rem;
+    font-size: 10vw;
+  }
+
+  .last-name {
+    margin-left: 4px;
+    font-size: 10vw;
+  }
+
+  .title-details {
+    font-size: 1rem;
+  }
+
+  .top {
+    padding-top: 5rem !important;
+  }
+
+  .project-button {
+    font-size: 0.7rem;
+  }
+
+  .nav-items {
+    margin: 0 !important;
+  }
+
+  .title-logo-box {
+    height: 35px;
+  }
+
+  .about-me {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .about-me-col {
+    margin: 1rem 0 !important;
+    width: 80%;
+  }
+
+  .about-me-text {
+    font-size: 0.6rem;
+  }
+
+  .about-top {
+    height: 0rem !important
+  }
+
+  .about-text {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .about-col {
+    height: 4rem !important;
+  }
+
+  .bottom {
+    height: 0rem !important
+  }
+
+  .proficiencies {
+    font-size: 2rem !important;
+    margin: 0;
+  }
+
+  .logo-pic {
+    width: 3.5rem !important;
+    margin: 0 !important;
+  }
+
+  .logos {
+    margin: 2rem 0.25rem !important;
+  }
+
+  .logos-alt {
+    width: 4rem !important;
+    padding: 0 !important;
+  }
+
+  .modal-dialog-centered { 
+    width: 90vw !important;
+    margin: 0 auto !important;
+  }
+
+  .project-text {
+    font-size: 8vw;
+  }
+
+  .resume-image {
+    max-height: 116.5vw;
+    max-width: 95vw !important;
+    height: 116.5vw;
+    width: 90vw;
+  }
+
+  .resume-link {
+    width: 90vw !important;
+  }
+}
+
 .nav-bar {
   list-style-type: none;
   display: flex;

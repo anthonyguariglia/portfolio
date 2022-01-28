@@ -5,10 +5,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 const About = props => {
   return (
     <Container fluid className='about'>
-      <Row className='filler-div'>
+      <Row className='filler-div about-top'>
       </Row>
-      <Row className='filler-div'>
-        <Col><p className='about-text'>About Me</p></Col>
+      <Row className='filler-div about-col'>
+        <Col className=''><p className='about-text'>About Me</p></Col>
       </Row>
       <Row>
         <Col className='about-me'>
@@ -45,7 +45,7 @@ const About = props => {
           </Row>
         </Col>
       </Row>
-      <Row className='filler-div'>
+      <Row className='filler-div bottom'>
         <Col></Col>
       </Row>
     </Container>

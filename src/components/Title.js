@@ -20,7 +20,7 @@ const Title = props => {
 
   return (
     <>
-      <Container fluid className='title-page'>
+      <Container fluid className='title-page top'>
         <Row className='filler-div'>
           <Col></Col>
         </Row>
@@ -47,8 +47,8 @@ const Title = props => {
         <Row>
           <Col>
             <div className='filler-div title-logo-holder'>
-              <a target='_blank' rel='noreferrer' href='https://github.com/anthonyguariglia'><img className='title-logos' src='https://icongr.am/devicon/github-original.svg?size=40' /></a>
-              <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/anthonyguariglia/' ><img className='title-logos' src='https://i.imgur.com/axzogcf.png'/></a>
+              <a target='_blank' rel='noreferrer' href='https://github.com/anthonyguariglia' className='title-logo-box'><img className='title-logos' src='https://icongr.am/devicon/github-original.svg?size=40' /></a>
+              <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/anthonyguariglia/' className='title-logo-box'><img className='title-logos' src='https://i.imgur.com/axzogcf.png'/></a>
             </div>
           </Col>
         </Row>
