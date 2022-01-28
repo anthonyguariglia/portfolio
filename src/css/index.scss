@@ -337,7 +337,7 @@ img {
 
   .modal-dialog {
     width: 90vw !important;
-    margin: 2rem !important;
+    margin: 5vw 5vw !important;
   }
 
   .portfolio-title {
@@ -355,6 +355,14 @@ img {
 
   .github, .deployed {
     width: 4vw !important;
+  }
+
+  .modal-text-content, .modal-mid-text-content {
+    font-size: 3.5vw !important;
+  }
+
+  .modaltitle {
+    font-size: 5vw !important
   }
  }
 
