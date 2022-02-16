@@ -3,6 +3,24 @@
 $bigImageWidth: 24%;
 $marginImage: 0.38rem;
 
+.bankroll {
+  border: 2px solid $success;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 1rem;
+  // border-radius: 0.5rem;
+  // float: left;
+  // margin-right: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    color: white;
+    background-color: #82ca9d;
+    border-color: white;
+  }
+}
+
 .project-box {
   padding: 0.75vw !important;
   width: 40vw;
@@ -296,4 +314,13 @@ span {
 .github-div {
   display: flex;
   justify-content: center;
+}
+
+.technologies {
+  display: block;
+  padding-left: 3rem !important;
+}
+
+.technologies-used {
+  width: 100%;
 }

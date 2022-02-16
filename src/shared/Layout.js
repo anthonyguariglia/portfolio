@@ -12,7 +12,8 @@ import TicTacToe from '../components/TicTacToe'
 import PortfolioProject from '../components/Portfolio'
 import Contact from '../components/Contact'
 import OuiChat from '../components/OuiChat'
-import { SpotiFeedModal, TicTacToeModal, PortfolioModal, OuiChatModal } from './modals'
+import BankRoll from '../components/BankRoll'
+import { SpotiFeedModal, TicTacToeModal, PortfolioModal, OuiChatModal, BankRollModal } from './modals'
 import { Prev } from 'react-bootstrap/esm/PageItem'
 import Scroll from 'react-scroll'
 const Element = Scroll.Element
@@ -23,6 +24,7 @@ const Layout = props => {
   const [ticTacToeModalShow, setTicTacToeModalShow] = useState(false)
   const [portfolioModalShow, setPortfolioModalShow] = useState(false)
   const [ouiChatModalshow, setOuiChatModalShow] = useState(false)
+  const [bankRollModalshow, setBankRollModalShow] = useState(false)
 
   return (
     <>
@@ -34,6 +36,13 @@ const Layout = props => {
           <div className='filler-div large-heading'>
             <p className='project-text'>Projects</p>
           </div>
+          <Row className='project-row'>
+            <Col className='project-box' >
+              <BankRoll showModal={setBankRollModalShow} />
+            </Col>
+            <BankRollModal show={bankRollModalshow} onHide={() => setBankRollModalShow(false)} />
+
+          </Row>
           <Row className='project-row'>
 
             <Col className='project-box' >

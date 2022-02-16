@@ -251,7 +251,7 @@ export const OuiChatModal = props => {
         </Row>
         <Row className='modal-mid-text-content'>
           <p>
-            Although more technically advanced than anything I had done prior, the real challenge of this application was that it was done in a group of 5 students. As a group, we had 4 days to complete this project and all had to assign ourselves tasks to reach completion on time
+            While more technically advanced than anything I had done prior, the real challenge of this application was that it was done in a group of 5 students. As a group, we had 4 days to complete this project and all had to assign ourselves tasks to reach completion on time
           </p>
           <p>
             Having some prior experience using the Agile Scrum methodology, I took on the role of Scrum Master for this group. I handled all processes related to managing tickets, creating and merging pull requests, resolving conflicts, and merging feature branches to both the development and main branches. Additionally, I took on issues spanning both the front and back end, and pushed out a significant number of features alongside my Scrum duties
@@ -278,6 +278,77 @@ export const OuiChatModal = props => {
           </Col>
           <Col>
             <button className='gitHubLink' onClick={() => window.open('https://github.com/ga-git-good/chat-app')}>
+              <img className='github' src='https://icongr.am/feather/github.svg?size=128' /><span>GitHub Link</span>
+            </button>
+          </Col>
+        </Row>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  )
+}
+
+export const BankRollModal = props => {
+  return (
+    <Modal
+      {...props}
+      size='lg'
+      aria-labelledby='contained-modal-title-vcenter'>
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          BankRoll
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Row>
+          <Col>
+            <h4 className='modaltitle'>An intuitive stock-tracking app for the casual investor</h4>
+          </Col>
+        </Row>
+        <Row className='modal-text-content'>
+          <p>
+            BankRoll is a simple stock-tracking app that allows users to add and follow the performance of their stocks in one place. Once an account is created, the user can search for any stock registered on the major exchanges using the built-in search bar, and see a graph of the stock&apos;s recent performance over ranges of 1 day, 1 week, 2 weeks, and 1 month.
+          </p>
+        </Row>
+        <Row>
+          <Col className='small-images'>
+            <img className='playlist' src='https://i.imgur.com/DYs9kDQ.png' />
+          </Col>
+        </Row>
+        <Row className='modal-mid-text-content'>
+          <p>
+            If the user wishes to track this stock for an extended period of time, they have the option of creating a stock list with their desired name, and can add as many stocks as they would like to this list. Each stock they add will appear in the stock bar at the top of the screen, and the current stock price and daily percent change will update for those stocks upon every data refresh. If they no longer wish to track the stock, they can simply click the X at the top right corner of the stock on the stock bar and it will be removed.
+          </p>
+        </Row>
+        <Row>
+          <Col className='technologies'>
+            <h3 className='technologies-used'>Technologies Used</h3>
+            <h5>React Functional Programming Design</h5>
+            <h5>MySQL Database Storage</h5>
+            <h5>AWS RDS Database Hosting</h5>
+          </Col>
+          <Col className='technologies'>
+            <h3 className='technologies-used'>Additional Support Packages</h3>
+            <h5>FinnHub finance API</h5>
+            <h5>Recharts graphing library</h5>
+            <h5>React-Select search bar</h5>
+          </Col>
+        </Row>
+        <Row className='modal-mid-text-content'>
+          <p>
+            The final ressult is a simple app that lets you intuitively search for new stocks and track the performance of the existing stocks in your portfolio!
+          </p>
+        </Row>
+        <Row className='links'>
+          <Col>
+            <button className='deployedSite' onClick={() => window.open('https://anthonyguariglia.github.io/bankroll/')}>
+              <span>Deployed Site</span><img className='deployed' src='https://icongr.am/feather/link.svg?size=128' />
+            </button>
+          </Col>
+          <Col>
+            <button className='gitHubLink' onClick={() => window.open('https://github.com/anthonyguariglia/bankroll')}>
               <img className='github' src='https://icongr.am/feather/github.svg?size=128' /><span>GitHub Link</span>
             </button>
           </Col>
