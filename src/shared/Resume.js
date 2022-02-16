@@ -13,7 +13,7 @@ const Resume = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <a className='resume-link' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1lcBtRLgzESSk4QDxXDmaA8eH69_XiKOV/view?usp=sharing'><img className='resume-image' src='https://i.imgur.com/q6HRnO4.png' /></a>
+      <a className='resume-link' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/19i8LMSRfOVFtF4TYkdvgsRKBF8MphDqU/view?usp=sharing'><img className='resume-image' src='https://i.imgur.com/0aDeDEJ.png' /></a>
       {/* <Modal.Body className='resume-modal'>
         <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1RxVumwkM816B6eNBkpgI6x_joaNRqkkI/view?usp=sharing'><img className='resume-image' src='https://i.imgur.com/5njw9g0.png?1' /></a>
       </Modal.Body> */}
